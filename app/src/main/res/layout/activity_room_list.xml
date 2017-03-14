@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_room_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hyugnmin.android.firebasechat.MainActivity">
+
+    <Button
+        android:id="@+id/btnRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="+" />
+
+    <TextView
+        android:text="Rooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/listView"
+        android:layout_below="@+id/btnRoom" />
+
+    <EditText
+        android:id="@+id/editTextRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listView"
+        android:layout_toLeftOf="@+id/btnRoom"
+        android:layout_toStartOf="@+id/btnRoom"
+        android:ems="10"
+        android:hint="RoomTitle"
+        android:inputType="textPersonName" />
+</RelativeLayout>
